@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+width: 100vw;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+
+div {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.street {
+  background-color: grey;
+}
+
+
+
+.frog {
+  background-color: green;
+}
+
+.car {
+  background-image: url('../assets/toppng.com-free-download-high-quality-cartoon-car-png-icon-orange-cartoon-car-no-background-800x322.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.log {
+  background-color: brown;
+}
+.log-and-frog {
+  background-color: pink;
+}
