@@ -13,8 +13,6 @@ const init = () => {
   const createGrid = frogPosition => {
     for (let i = 0 ; i < width * 10 ; i++){
       const cell = document.createElement('div')
-      cell.innerText = i
-      cell.classList.add('street')
       gameMain.appendChild(cell)
       cells.push(cell)
     }
@@ -46,7 +44,7 @@ const init = () => {
     }
     // Add new frog class
 
-    isFrogOnLog() ? cells[frogPosition].classList.add('log-and-frog') : cells[frogPosition].classList.add('frog')
+    isFrogOnLog() ? cells[frogPosition].classList.add('log-and-frog', 'log') : cells[frogPosition].classList.add('frog')
     
     // Check if frog hit a car
     checkCarCollision()
